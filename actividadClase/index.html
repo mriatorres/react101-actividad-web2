@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="TemplateMo">
+
+        <title>React.js 101</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/magnific-popup.css" rel="stylesheet">
+
+        <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+        
+<!--
+
+TemplateMo 578 First Portfolio
+
+https://templatemo.com/tm-578-first-portfolio
+
+-->
+    </head>
+    
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="spinner-rotate"></span>    
+            </div>
+        </section>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">React.js 101</a>
+
+               
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">Introducción</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Anatomia</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Propuesta</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Componentes</a>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="hero d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-7 col-12">
+                            <div class="hero-text">
+                                <div class="hero-title-wrap d-flex align-items-center mb-4">
+                                    <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/react-3.png" class="avatar-image avatar-image-large img-fluid" alt="">
+
+                                    <h1 class="hero-title ms-3 mb-0">React.js</h1>
+                                </div>
+
+                                <h2 class="mb-4">Conceptos</h2>
+                                <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">Comenzar</a></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12 position-relative">
+                            <div class="hero-image-wrap"></div>
+                            <img src="images/portrait-happy-excited-man-holding-laptop-computer.png" class="hero-image img-fluid" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#535da1" fill-opacity="1" d="M0,160L24,160C48,160,96,160,144,138.7C192,117,240,75,288,64C336,53,384,75,432,106.7C480,139,528,181,576,208C624,235,672,245,720,240C768,235,816,213,864,186.7C912,160,960,128,1008,133.3C1056,139,1104,181,1152,202.7C1200,224,1248,224,1296,197.3C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
+            </section>
+
+
+            <section class="about section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <img src="https://img.freepik.com/free-photo/php-programming-html-coding-cyberspace-concept_53876-124097.jpg?w=740&t=st=1693673758~exp=1693674358~hmac=476d170c6fc63ee1bb30da5f997612e1a0394115871e04870d42921de3c2d7b9" class="about-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                            <div class="about-thumb">
+
+                                <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
+                                    <h2 class="text-white me-4 mb-0">Introducción</h2>
+
+                                    <img src="https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg?w=740&t=st=1693678323~exp=1693678923~hmac=73bdfbb2f7213808c2a4f3a62e01ea6c3674529580690df29adb994da1a5158f" class="avatar-image img-fluid" alt="">
+                                </div>
+
+
+                                <p>Cuando empezamos a desarrollar un proyecto con un nuevo lenguaje o framework una de las primeras dudas que nos surgen es cómo organizo mi proyecto y, en el caso de React, esto no es una excepción. </p>
+
+                                <p>Si nos basamos en la documentación oficial, React no define una forma correcta de organizar nuestros ficheros y lo deja a criterio del desarrollador. Esto puede parecer extraño si hemos trabajado anteriormente con frameworks como Angular, pero hay que tener en cuenta que React es una librería de frontend que se puede utilizar tanto para crear aplicaciones completas, como para componentes concretos dentro de una base de código ya existente, por lo tanto, tiene sentido que esta elección sea libre. </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--
+            <section class="featured section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <div class="profile-thumb">
+                                <div class="profile-title">
+                                    <h4 class="mb-0">Information</h4>
+                                </div>
+
+                                <div class="profile-body">
+                                    <p>
+                                        <span class="profile-small-title">Name</span> 
+                                        <span>Joshua Morgan</span>
+                                    </p>
+
+                                    <p>
+                                        <span class="profile-small-title">Birthday</span> 
+                                        <span>Aug 12, 1986</span>
+                                    </p>
+
+                                    <p>
+                                        <span class="profile-small-title">Phone</span> 
+                                         <span><a href="tel: 305-240-9671">120-240-9600</a></span>
+                                    </p>
+
+                                    <p>
+                                        <span class="profile-small-title">Email</span> 
+                                        <span><a href="mailto:hello@josh.design">hello@josh.design</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                            <div class="about-thumb">
+                                <div class="row">
+                                    <div class="col-lg-6 col-6 featured-border-bottom py-2">
+                                        <strong class="featured-numbers">20+</strong>
+
+                                        <p class="featured-text">Years of Experiences</p>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 featured-border-start featured-border-bottom ps-5 py-2">
+                                        <strong class="featured-numbers">245</strong>
+
+                                        <p class="featured-text">Happy Customers</p>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 pt-4">
+                                        <strong class="featured-numbers">640</strong>
+
+                                        <p class="featured-text">Project Finished</p>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 featured-border-start ps-5 pt-4">
+                                        <strong class="featured-numbers">72+</strong>
+
+                                        <p class="featured-text">Digital Awards</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="clients section-padding">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-12 col-12">
+                            <h3 class="text-center mb-5">Companies I've had worked</h3>
+                        </div>
+
+                        <div class="col-lg-2 col-4 ms-auto clients-item-height">
+                            <img src="images/clients/cachet.svg" class="clients-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-4 clients-item-height">
+                            <img src="images/clients/guitar-center.svg" class="clients-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-4 clients-item-height">
+                            <img src="images/clients/tokico.svg" class="clients-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-4 clients-item-height">
+                            <img src="images/clients/shopify.svg" class="clients-image img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-4 me-auto clients-item-height">
+                            <img src="images/clients/profil-rejser.svg" class="clients-image img-fluid" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        -->
+
+            <section class="services section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                                <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010119.jpg?w=740&t=st=1693678197~exp=1693678797~hmac=ff8b817086cae4bbfae30983132ac36d0b49f48b7effa20dcc8f220ad9b251d6" class="avatar-image img-fluid" alt="">
+
+                                <h3 class="text-white ms-4 mb-0">Anatomia de un proyecto</h3>
+                            </div>
+
+                            <div class="row pt-lg-5">
+                                <div class="col-lg-6 col-12">
+                                    <div class="services-thumb">
+                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                            <h3 class="mb-0">Estructura por tipo de fichero </h3>
+
+                                            <div class="services-price-wrap ms-auto">
+                                                <div class="services-price-overlay"></div>
+                                            </div>
+                                        </div>
+
+                                        <p>Esta organización nos permite tener estructuras muy sencillas para proyectos que estén empezando o queramos realizar sin demasiados quebraderos de cabeza, y es la que recomendaría para todos aquellos que se inicien con React. El problema principal es que una vez empieza a crecer nuestro proyecto puede convertirse en un auténtico caos, sobre todo a nivel de componentes, ya que en la variante más sencilla los tendríamos todos dentro de una carpeta llamada componentes. 
+                                        </p>
+
+                                            <h3>Ejemplo</h3>
+                                            <p>src/ 
+
+                                                |-- components/ 
+                                                
+                                                |   |-- Avatar/ 
+                                                
+                                                |   |   |-- Avatar.jsx 
+                                                
+                                                |   |   |-- Avatar.test.js 
+                                                
+                                                |   |-- Button/ 
+                                                
+                                                |   |   |-- Button.jsx 
+                                                
+                                                |   |   |-- Button.test.js 
+                                                
+                                                |   |-- TextField/ 
+                                                
+                                                |   |   |-- TextField.jsx 
+                                                
+                                                |   |   |-- TextField.test.js 
+                                                
+                                                |-- contexts/ 
+                                                
+                                                |   |-- UserContext/ 
+                                                
+                                                |   |   |-- UserContext.js 
+                                                
+                                                |-- hooks/ 
+                                                
+                                                |   |-- useMediaQuery/ 
+                                                
+                                                |   |   |-- useMediaQuery.js 
+                                                
+                                                |-- pages/ 
+                                                
+                                                |   |-- UserProfile/ 
+                                                
+                                                |   |   |-- components/ 
+                                                
+                                                |   |   |   |-- SomeUserProfileComponent/ 
+                                                
+                                                |   |   |   |   |-- SomeUserProfileComponent.jsx 
+                                                
+                                                |   |   |   |   |-- SomeUserProfileComponent.test.js 
+                                                
+                                                |   |   |-- UserProfile.jsx 
+                                                
+                                                |   |   |-- UserProfile.test.js 
+                                                
+                                                |   |-- index.js 
+                                                
+                                                |-- routes/ 
+                                                
+                                                |   |-- routes.jsx 
+                                                
+                                                |   |-- routes.test.js 
+                                                
+                                                |-- utils/ 
+                                                
+                                                |   |-- some-util/ 
+                                                
+                                                |   |   |-- index.js 
+                                                
+                                                |   |   |-- someUtil.js 
+                                                
+                                                |   |   |-- index.test.js 
+                                                
+                                                |-- services/ 
+                                                
+                                                |   |-- some-service/ 
+                                                
+                                                |   |   |-- index.js/ 
+                                                
+                                                |   |   |-- someService.js/ 
+                                                
+                                                |   |   |-- index.test.js 
+                                                
+                                                |-- App.jsx 
+                                                
+                                                |-- index.js </p>
+
+                                       
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <div class="services-thumb services-thumb-up">
+                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                            <h3 class="mb-0">Estructura por funcionalidad o modular </h3>
+
+                                            <div class="services-price-wrap ms-auto">
+                                                <div class="services-price-overlay"></div>
+                                            </div>
+                                        </div>
+
+                                        <p>La siguiente forma de organización que se menciona en la documentación es la basada en módulos, esta organización es interesante para proyectos con una escala mayor.  <br> <br>
+
+ 
+
+                                            La idea principal es que cada módulo que definimos tenga todo el código relacionado con este y solo se importe código del modulo en sí. Cuando tenemos varios módulos que necesitan de la misma pieza de código esta la podemos escribir dentro de una carpeta compartida e importarla a los diferentes módulos. La regla fundamental que se pretenden seguir es no importar código entre módulos. </p>
+
+                                            <h3>Ejemplo</h3>
+                                            <p>src/ 
+
+                                                |-- components/ 
+                                                
+                                                |   |-- Avatar/ 
+                                                
+                                                |   |   |-- Avatar.jsx 
+                                                
+                                                |   |   |-- Avatar.test.js 
+                                                
+                                                |   |-- Button/ 
+                                                
+                                                |   |   |-- Button.jsx 
+                                                
+                                                |   |   |-- Button.test.js 
+                                                
+                                                |   |-- TextField/ 
+                                                
+                                                |   |   |-- TextField.jsx 
+                                                
+                                                |   |   |-- TextField.test.js 
+                                                
+                                                |-- contexts/ 
+                                                
+                                                |   |-- UserContext/ 
+                                                
+                                                |   |   |-- UserContext.js 
+                                                
+                                                |-- hooks/ 
+                                                
+                                                |   |-- useMediaQuery/ 
+                                                
+                                                |   |   |-- useMediaQuery.js 
+                                                
+                                                |-- features/ 
+                                                
+                                                |   |-- Home/ 
+                                                
+                                                |   |   |-- components/ 
+                                                
+                                                |   |   |   |-- SomeUserProfileComponent/ 
+                                                
+                                                |   |   |   |   |-- SomeUserProfileComponent.jsx 
+                                                
+                                                |   |   |   |   |-- SomeUserProfileComponent.test.js 
+                                                
+                                                |   |   |-- utils/ 
+                                                
+                                                |   |   |-- services/ 
+                                                
+                                                |   |   |-- hooks/ 
+                                                
+                                                |   |   |-- contexts/ 
+                                                
+                                                |   |   |-- views/ 
+                                                
+                                                |   |   |   |-- HomeView.jsx 
+                                                
+                                                |   |   |-- pages/ 
+                                                
+                                                |   |   |   |-- HomePage.jsx 
+                                                
+                                                |   |-- index.js 
+                                                
+                                                |-- utils/ 
+                                                
+                                                |   |-- some-common-util/ 
+                                                
+                                                |   |   |-- index.js/ 
+                                                
+                                                |   |   |-- index.test.js 
+                                                
+                                                |-- services/ 
+                                                
+                                                |   |-- some-common-service/ 
+                                                
+                                                |   |   |-- index.js/ 
+                                                
+                                                |   |   |-- some-common-service.js/ 
+                                                
+                                                |   |   |-- index.test.js 
+                                                
+                                                |-- App.jsx 
+                                                
+                                                |-- index.js </p>
+
+                                      
+
+                                        
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="projects section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-md-8 col-12 ms-auto">
+                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
+                                <img src="images/white-desk-work-study-aesthetics.jpg" class="avatar-image img-fluid" alt="">
+
+                                <h2 class="text-white ms-4 mb-0">Propuesta estructura</h2>
+                            </div>
+                        </div>
+
+                        <p><b>En este ejemplo: </b><br>
+
+                            La carpeta node_modules contiene las dependencias del proyecto. <br>
+                            
+                            La carpeta public contiene archivos estáticos como index.html y favicon.ico.  <br>
+                            
+                            La carpeta src es donde se encuentra la mayor parte del código de la aplicación React. Contiene el punto de entrada index.js, el componente principal App.js, componentes adicionales en la carpeta components, estilos en la carpeta styles, y recursos como imágenes en la carpeta img. <br>
+                            
+                            El archivo package.json describe las dependencias y scripts del proyecto. <br>
+                            
+                            Los archivos webpack.config.js y babel.config.js podrían contener configuraciones personalizadas para Webpack y Babel si se han configurado de manera personalizada. </p>
+
+                        <h2>Estructura</h2>
+
+                        <p>my-react-app/ 
+
+                            ├── node_modules/ 
+                          
+                            ├── public/ 
+                          
+                            │   ├── index.html 
+                          
+                            │   └── favicon.ico 
+                          
+                            ├── src/ 
+                          
+                            │   ├── index.js 
+                          
+                            │   ├── App.js 
+                          
+                            │   ├── components/ 
+                          
+                            │   │   ├── Header.js 
+                          
+                            │   │   ├── Footer.js 
+                          
+                            │   │   └── MainContent.js 
+                          
+                            │   ├── styles/ 
+                          
+                            │   │   ├── main.css 
+                          
+                            │   │   └── variables.scss 
+                          
+                            │   ├── img/ 
+                          
+                            │   │   ├── logo.png 
+                          
+                            │   │   └── background.jpg 
+                          
+                            ├── package.json 
+                          
+                            ├── package-lock.json (o yarn.lock) 
+                          
+                           
+                          
+                           
+                          
+                            ├── webpack.config.js 
+                          
+                            ├── babel.config.js 
+                          
+                            └── README.md </p>
+            </section>
+
+            <section class="contact section-padding" id="section_5">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-8 col-12">
+                                <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                                    <img src="images/aerial-view-man-using-computer-laptop-wooden-table.jpg" class="avatar-image img-fluid" alt="">
+
+                                    <h2 class="text-white ms-4 mb-0">Componentes</h2>
+                                </div>
+                            </div>
+                            <h4>¿Qué es un componente?</h4>
+                            <p>Un componente web es una parte de la interfaz de una página o aplicación web que podemos reutilizar. Por ejemplo, una línea de producto de un carrito de la compra, o un elemento colapsable. <br>
+
+                                Los frameworks o librerías como React se basan en el concepto de componente. De esta forma, todo lo que vamos a crear son componentes que iremos usando para crear la interfaz deseada. 
+                                
+                                Los componentes de React, además, pueden personalizarse a través de un mecanismo llamado props, que no es otra cosa que pasarle valores a través de los atributos del componente HTML. </p>
+                            
+                                <h4>Importancia</h4>
+                                <p>Los componentes son una parte fundamental en React y desempeñan un papel central en el desarrollo de aplicaciones en esta biblioteca: 
+
+                                    <ul>
+                                        <li><b>Reutilización de código:</b> Los componentes permiten encapsular el comportamiento y la interfaz de usuario en unidades lógicas y reutilizables. Puedes usar un componente en múltiples lugares de tu aplicación, lo que ahorra tiempo y esfuerzo en la escritura de código repetitivo. </li> <br>
+                                        <li><b>Abstracción de la interfaz de usuario:</b> Los componentes dividen la interfaz de usuario en piezas más pequeñas y manejables. Esto facilita el mantenimiento y la comprensión del código, ya que cada componente se centra en una sola responsabilidad. </li> <br>
+                                        <li><b>Separación de preocupaciones:</b> React promueve la separación de preocupaciones al dividir la lógica de presentación (UI) de la lógica de negocio. Esto hace que tu código sea más organizado y mantenible al permitir que diferentes equipos trabajen en diferentes aspectos de la aplicación. </li> <br>
+                                        <li><b>Facilita la colaboración:</b> Los componentes bien definidos facilitan la colaboración entre desarrolladores, ya que cada componente puede ser desarrollado y probado de manera independiente. Esto es especialmente útil en equipos grandes. </li> <br>
+                                        <li><b>Rendimiento optimizado:</b> React utiliza un mecanismo de reconciliación virtual para minimizar las actualizaciones del DOM, lo que mejora el rendimiento de la aplicación. Los componentes funcionales pueden optimizarse aún más mediante el uso de React.memo y React.useMemo. </li> <br>
+                                        <li><b>Pruebas unitarias:</b> Los componentes aislados son más fáciles de probar de manera unitaria. Puedes escribir pruebas para cada componente para garantizar su correcto funcionamiento sin depender de otras partes de la aplicación. </li> <br>
+                                        <li><b>Facilita la escalabilidad:</b> A medida que tu aplicación crece, los componentes te ayudan a mantener un código más organizado y escalable. Puedes agregar nuevos componentes o reemplazar componentes existentes sin afectar otras partes de la aplicación. </li> <br>
+                                        <li><b>Ecosistema de componentes reutilizables:</b> React cuenta con una comunidad activa y una gran cantidad de bibliotecas y frameworks que ofrecen componentes preconstruidos y reutilizables que puedes integrar en tu aplicación. </li> <br>
+                                    </ul>                   
+                                 </div>
+                                 <p>En resumen, los componentes en React son fundamentales para la construcción de aplicaciones web modernas, ya que promueven la reutilización, la organización, la escalabilidad y el rendimiento del código. Al adoptar la filosofía de componentes, puedes crear aplicaciones más mantenibles y eficientes. </p>
+
+                                 <h4>Tipos de componentes</h4>
+                                 <p>En React, puedes crear componentes tanto como funciones (componentes funcionales) o como clases (componentes de clase). Cada enfoque tiene sus propias características y casos de uso. Aquí te proporciono una descripción de ambos tipos de componentes: </p>
+                                 <h5>Componentes Funcionales</h5>
+                                 <ul>
+                                    <li><b>Componentes Funcionales Básicos: </b>Los componentes funcionales son simplemente funciones de JavaScript que devuelven elementos de React (usualmente JSX). Son simples y fáciles de entender. <br><br>
+
+ 
+
+                                        ```javascript 
+                                        
+                                        import React from 'react'; 
+                                        
+                                         
+                                        
+                                        function MiComponenteFuncional() { 
+                                        
+                                          return <div>Hola, soy un componente funcional.</div>; 
+                                        
+                                        } 
+                                        
+                                         
+                                        
+                                        export default MiComponenteFuncional; </li>
+                                    <li><b>Componentes Funcionales con Estado (Hooks): </b> Los componentes de clase pueden tener estado local y métodos de ciclo de vida, como `componentDidMount`, `componentDidUpdate`, etc. <br><br>
+                                        <p>```javascript 
+
+                                            import React, { useState, useEffect } from 'react'; 
+                                            
+                                             
+                                            
+                                            function Contador() { 
+                                            
+                                              const [count, setCount] = useState(0); 
+                                            
+                                             
+                                            
+                                              useEffect(() => { 
+                                            
+                                                document.title = `Contador: ${count}`; 
+                                            
+                                              }, [count]); 
+                                            
+                                             
+                                            
+                                              return ( 
+                                            
+                                                div> 
+                                            
+                                                  p>Contador: {count}</p> 
+                                            
+                                                  button onClick={() => setCount(count + 1)}>Incrementar</button> 
+                                            
+                                                /div> 
+                                            
+                                              ); 
+                                            
+                                            } 
+                                            
+                                             
+                                            
+                                            export default Contador; 
+                                            
+                                            ``` </p>
+                                    </li>
+                                 </ul>
+                                 <h5>Componentes de Clase</h5>
+                                 <ul>
+                                    <li><b>Componentes de Clase Básicos:</b> Los componentes de clase son clases de JavaScript que extienden la clase `React.Component`. Antes de la introducción de los Hooks, eran la forma principal de manejar el estado y los ciclos de vida. <br><br> ```javascript 
+
+                                        import React, { Component } from 'react'; 
+                                        
+                                         
+                                        
+                                        class MiComponenteDeClase extends Component { 
+                                        
+                                          render() { 
+                                        
+                                            return div>Hola, soy un componente de clase./div>; 
+                                        
+                                          } 
+                                        
+                                        } 
+                                        
+                                         
+                                        
+                                        export default MiComponenteDeClase; 
+                                        
+                                        ``` 
+                                    </li> <br>
+                                    <li><b>Componentes de Clase con Estado:</b> Los componentes de clase pueden tener estado local y métodos de ciclo de vida, como `componentDidMount`, `componentDidUpdate`, etc. <br><br>
+                                        ```javascript 
+
+import React, { Component } from 'react'; 
+
+ 
+
+class Reloj extends Component { 
+
+  constructor(props) { 
+
+    super(props); 
+
+    this.state = { time: new Date() }; 
+
+  } 
+
+ 
+
+  componentDidMount() { 
+
+    this.timerID = setInterval(() => this.actualizarHora(), 1000); 
+
+  } 
+
+ 
+
+  componentWillUnmount() { 
+
+    clearInterval(this.timerID); 
+
+  } 
+
+ 
+
+  actualizarHora() { 
+
+    this.setState({ time: new Date() }); 
+
+  } 
+
+ 
+
+  render() { 
+
+    return ( 
+
+      <div> 
+
+        <p>Hora actual: {this.state.time.toLocaleTimeString()}</p> 
+
+      </div> 
+
+    ); 
+
+  } 
+
+} 
+
+ 
+
+export default Reloj; 
+
+``` 
+                                    </li>
+
+                                 </ul> <br>
+    <p>A partir de la versión 16.8 de React, se introdujeron los Hooks, lo que permitió a los componentes funcionales manejar el estado y los efectos de manera más sencilla. Se recomienda el uso de componentes funcionales con Hooks en lugar de componentes de clase, a menos que necesites mantener o trabajar en una base de código existente que utiliza componentes de clase. Los componentes funcionales son más concisos y fáciles de entender en la mayoría de los casos. </p>
+    <br>          <p><b>Tanto las funciones como las clases en React tienen sus propias características y casos de uso. A continuación, se presentan las características clave de ambos enfoques: </b></p>
+            
+            <h4>Características de las Funciones en React (Componentes Funcionales)</h4>
+            <ul>
+                <li><b>Simplicidad: </b>Los componentes funcionales son más concisos y fáciles de entender en comparación con las clases. Son una opción excelente para componentes simples y reutilizables. </li> <br>
+                <li><b>Hooks: </b> Los componentes funcionales pueden utilizar Hooks para manejar el estado y los efectos, lo que facilita la gestión de la lógica compleja dentro de un componente funcional. </li> <br>
+                <li><b>Sintaxismás ligera: </b>La sintaxis de un componente funcional es más ligera y moderna, lo que lo hace más atractivo para muchos desarrolladores. </li> <br>
+                <li><b>Rendimiento: </b>Los componentes funcionales pueden ser más eficientes en términos de rendimiento en comparación con las clases, ya que no tienen el overhead de las instancias de clase. </li> <br>
+                <li><b>Mejor soporte para React Concurrent Mode: </b> Los componentes funcionales están más alineados con los conceptos de Concurrent Mode, una característica futura de React para mejorar el rendimiento y la experiencia del usuario</li> <br>
+                <li><b>Más adecuado para bases de código existentes: </b>Si estás trabajando en una base de código existente que utiliza clases, puede tener sentido seguir utilizando clases para mantener la consistencia en el código.</li> <br>
+            </ul>
+        </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <div class="copyright-text-wrap">
+                            <p class="mb-0">
+                                <span class="copyright-text">Copyright © 2036 <a href="#">First Portfolio</a> Company. All rights reserved.</span>
+                                Design: 
+                                <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
